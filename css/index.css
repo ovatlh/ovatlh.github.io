@@ -205,14 +205,14 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-    main {
+    /* main {
         align-items: start;
-    }
+    } */
     .content {
         grid-template-areas: "img" "info";
         grid-template-rows: auto auto;
         width: 100%;
-        min-height: 100vh;
+        /* min-height: 100vh; */
         box-shadow: none;
     }
     .img .img-pp {
