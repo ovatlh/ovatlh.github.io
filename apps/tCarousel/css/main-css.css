@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg: #e1e1e1;
+  --body-clr: #1e1e1e;
+  --body-font-family: "Segoe UI";
+  --main-pdd: 20px;
+  --main-gp: 20px;
+
+  --content-clr: #ffffff;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-clr);
+  font-family: var(--body-font-family);
+}
+
+main {
+  display: grid;
+  padding: var(--main-pdd);
+  gap: var(--main-gp);
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content {
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  color: var(--content-clr);
+}
+
+.p-1 {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.p-2 {
+  background-color: hsl(63, 100%, 40%);
+}
+
+.p-3 {
+  background-color: hsl(120, 100%, 40%);
+}
+
+.p-4 {
+  background-color: hsl(211, 100%, 40%);
+}
+
+.p-5 {
+  background-color: hsl(283, 100%, 40%);
+}
+
+.author {
+  display: grid;
+  place-content: center;
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+}
+
+.link-repo {
+  z-index: 5;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.link-repo:hover {
+  text-decoration: underline;
+}
+
+.link-io {
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.link-io:hover {
+  text-decoration: underline;
+}
