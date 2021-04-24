@@ -1,0 +1,14 @@
+.theme-light {
+  /* Body */
+  --body-bg: hsl(0, 0%, 90%);
+  --body-clr: hsl(0, 0%, 0%);
+
+  /* Theme-Buttons */
+  --btntheme-bg: hsl(0, 0%, 100%);
+  --btntheme-clr: hsl(0, 0%, 20%);
+
+  /* Cards */
+  --card-bg: hsl(0, 0%, 100%);
+  --card-clr: hsl(0, 0%, 20%);
+  --card-shadow-clr: hsla(0, 0%, 0%, 0.1);
+}
