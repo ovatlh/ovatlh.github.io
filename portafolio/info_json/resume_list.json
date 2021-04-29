@@ -18,5 +18,35 @@
     "title": "theme-js-cssvariables",
     "resume": "Cambio de tema con javascript y variables css.",
     "proyecto_id": "theme-js-cssvariables"
+  },
+  {
+    "title": "Test: 01",
+    "resume": "Test - 01",
+    "proyecto_id": "test-01"
+  },
+  {
+    "title": "Test: 02",
+    "resume": "Test - 02",
+    "proyecto_id": "test-02"
+  },
+  {
+    "title": "Test: 03",
+    "resume": "Test - 03",
+    "proyecto_id": "test-03"
+  },
+  {
+    "title": "Test: 04",
+    "resume": "Test - 04",
+    "proyecto_id": "test-04"
+  },
+  {
+    "title": "Test: 05",
+    "resume": "Test - 05",
+    "proyecto_id": "test-05"
+  },
+  {
+    "title": "Test: 06",
+    "resume": "Test - 06",
+    "proyecto_id": "test-06"
   }
 ]
