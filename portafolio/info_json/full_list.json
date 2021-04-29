@@ -4,7 +4,7 @@
     "title": "MyAnimeSearcher",
     "options": {
       "cover": {
-        "link": "https://ovatlh.github.io/portafolio/img/mal-favicon.5f43fddd.png",
+        "link": "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/cover.jpg",
         "bg_clr": "hsl(222, 55%, 41%)"
       },
       "icon": {
