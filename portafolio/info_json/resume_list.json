@@ -42,5 +42,16 @@
         "title": "theme-js-cssvariables"
       }
     }
+  },
+  {
+    "title": "theme-js-cssvariables test 2",
+    "resume": "Cambio de tema con javascript y variables css.",
+    "to": {
+      "name": "Proyecto",
+      "params": {
+        "proyecto_id": "theme-js-cssvariables",
+        "title": "theme-js-cssvariables"
+      }
+    }
   }
 ]
