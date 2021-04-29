@@ -2,56 +2,21 @@
   {
     "title": "MyAnimeSearcher",
     "resume": "Buscador de MyAnimeList con Jikan API y Vue.js",
-    "to": {
-      "name": "Proyecto",
-      "params": {
-        "proyecto_id": "myanimesearcher",
-        "title": "MyAnimeSearcher"
-      }
-    }
+    "proyecto_id": "myanimesearcher"
   },
   {
     "title": "FCA Sabinas",
     "resume": "Festival de la Carne Asada - Sabinas, Coahuila.",
-    "to": {
-      "name": "Proyecto",
-      "params": {
-        "proyecto_id": "fcasabinas",
-        "title": "FCA Sabinas"
-      }
-    }
+    "proyecto_id": "fcasabinas"
   },
   {
     "title": "tCarousel-js",
     "resume": "Simple carousel con javascript.",
-    "to": {
-      "name": "Proyecto",
-      "params": {
-        "proyecto_id": "tcarousel-js",
-        "title": "tCarousel-js"
-      }
-    }
+    "proyecto_id": "tcarousel-js"
   },
   {
     "title": "theme-js-cssvariables",
     "resume": "Cambio de tema con javascript y variables css.",
-    "to": {
-      "name": "Proyecto",
-      "params": {
-        "proyecto_id": "theme-js-cssvariables",
-        "title": "theme-js-cssvariables"
-      }
-    }
-  },
-  {
-    "title": "theme-js-cssvariables test 2",
-    "resume": "Cambio de tema con javascript y variables css.",
-    "to": {
-      "name": "Proyecto",
-      "params": {
-        "proyecto_id": "theme-js-cssvariables",
-        "title": "theme-js-cssvariables"
-      }
-    }
+    "proyecto_id": "theme-js-cssvariables"
   }
 ]
