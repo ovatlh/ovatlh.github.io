@@ -78,6 +78,10 @@
       ]
     },
     "carousel_images_links": [
+      "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/cover.jpg",
+      "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/cover.jpg",
+      "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/cover.jpg",
+      "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/cover.jpg",
       "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/cover.jpg"
     ]
   }
