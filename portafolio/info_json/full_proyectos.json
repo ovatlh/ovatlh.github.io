@@ -8,7 +8,7 @@
         "bg_clr": "hsl(222, 55%, 41%)"
       },
       "icon": {
-        "link": "https://ovatlh.github.io/portafolio/img/mal-favicon.5f43fddd.png"
+        "link": "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/icons/mal-favicon.png"
       },
       "links": {
         "bg_hover": "hsl(222, 55%, 41%)",
