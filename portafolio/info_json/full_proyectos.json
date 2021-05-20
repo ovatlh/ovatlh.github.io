@@ -95,7 +95,7 @@
     "options": {
       "cover": {
         "link": "https://raw.githubusercontent.com/ovatlh/tCarousel-js/main/assets/tcarousel-js.PNG",
-        "bg_clr": "hsl(0, 0%, 100%)"
+        "bg_clr": "hsl(0, 0%, 88%)"
       },
       "icon": {
         "link": ""
