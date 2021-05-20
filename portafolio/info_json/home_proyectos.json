@@ -1,0 +1,20 @@
+[
+  {
+    "id": "myanimesearcher",
+    "img": "https://raw.githubusercontent.com/ovatlh/vue-mal-search/main/src/assets/imgs/cover.jpg",
+    "title": "MyAnimeSearcher",
+    "desc": "MyAnimeSearcher es una aplicación web creada con Vue.js donde puedes buscar Animes, Mangas, Personajes o Personas en la industria del Anime."
+  },
+  {
+    "id": "tcarousel",
+    "img": "https://raw.githubusercontent.com/ovatlh/tCarousel-js/main/assets/tcarousel-js.PNG",
+    "title": "tCarousel-js",
+    "desc": "Carousel sencillo y dinamico con javascript vanilla y css."
+  },
+  {
+    "id": "nsfw",
+    "img": "https://raw.githubusercontent.com/ovatlh/nsfw/main/files/nsfw_img.jpg",
+    "title": "???",
+    "desc": "..."
+  }
+]
