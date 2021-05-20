@@ -101,7 +101,7 @@
         "link": ""
       },
       "links": {
-        "bg_hover": "hsl(0, 0%, 100%)",
+        "bg_hover": "hsl(0, 0%, 88%)",
         "clr_hover": "hsl(0, 0%, 0%)"
       }
     },
