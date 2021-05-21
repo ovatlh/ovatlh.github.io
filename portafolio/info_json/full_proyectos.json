@@ -78,15 +78,13 @@
       ]
     },
     "carousel_images_links": [
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png"
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/myanimesearcher/img-01.png",
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/myanimesearcher/img-02.png",
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/myanimesearcher/img-03.png",
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/myanimesearcher/img-04.png",
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/myanimesearcher/img-05.png",
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/myanimesearcher/img-06.png",
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/myanimesearcher/img-07.png"
     ]
   },
   {
@@ -122,11 +120,11 @@
     "title": "FCA: Sabinas Coah.",
     "options": {
       "cover": {
-        "link": "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
+        "link": "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/fcasabinas2020/fcasabinas_portada.jpg",
         "bg_clr": "hsl(29, 76%, 39%)"
       },
       "icon": {
-        "link": "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png"
+        "link": "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/fcasabinas2020/fcasabinas_icon.png"
       },
       "links": {
         "bg_hover": "hsl(29, 76%, 39%)",
@@ -180,9 +178,8 @@
       ]
     },
     "carousel_images_links": [
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png"
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/fcasabinas2020/01.jpg",
+      "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/fcasabinas2020/02.jpg"
     ]
   },
   {
@@ -190,8 +187,8 @@
     "title": "theme-js-cssvariables",
     "options": {
       "cover": {
-        "link": "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/preparando-imagen.png",
-        "bg_clr": "hsl(0, 0%, 100%)"
+        "link": "https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/apps/imgs/themejscssvariables/portada.png",
+        "bg_clr": "hsl(0, 0%, 88%)"
       },
       "icon": {
         "link": ""
