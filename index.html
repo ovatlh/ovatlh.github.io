@@ -21,13 +21,25 @@
 
   <main>
     <div class="left-column">
-      <div class="item tavo desktop" id="tavo-desktop">
+      <div class="item tavo desktop is-start" id="tavo-desktop">
         <p class="title" id="tavo-desktop-title">tavo</p>
         <img class="pp" src="files/pp-tavo.jpg" alt="tavo">
       </div>
     </div>
 
     <div class="right-column">
+      <div class="item theme">
+        <p class="title">Tema</p>
+
+        <button class="btn-light active" id="btn-light" onclick="fn_theme_light();">
+          <img class="theme-img" src="files/icon-sun.svg" alt="tema: light">
+        </button>
+
+        <button class="btn-dark" id="btn-dark" onclick="fn_theme_dark();">
+          <img class="theme-img" src="files/icon-moon.svg" alt="tema: dark">
+        </button>
+      </div>
+
       <div class="item tavo mobile">
         <p class="title">tavo</p>
         <img class="pp" src="files/pp-tavo.jpg" alt="tavo">
