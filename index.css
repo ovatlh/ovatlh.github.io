@@ -318,7 +318,15 @@ main {
   gap: var(--global-gap);
 }
 
-.item-container .red-item {
+.item-container-more {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: var(--global-gap);
+}
+
+.item-container .red-item,
+.item-container-more .red-item {
   text-decoration: none;
   width: 100%;
   aspect-ratio: 1/1;
@@ -329,13 +337,35 @@ main {
   z-index: 400;
 }
 
+.item-container .red-item {
+  background-color: var(--clr-red);
+}
+
 .item-container .red-item.red-github {
   --clr-red: #2B3137;
-  background-color: var(--clr-red);
 }
 .item-container .red-item.red-cv {
   --clr-red: #E6635A;
+}
+
+.item-container-more .red-item {
   background-color: var(--clr-red);
+}
+
+.item-container-more .red-item.red-linkedin {
+  --clr-red: #0077B5;
+}
+
+.item-container-more .red-item.red-instagram {
+  --clr-red: #C13584;
+}
+
+.item-container-more .red-item.red-twitter {
+  --clr-red: #00acee;
+}
+
+.item-container-more .red-item.red-myanimelist {
+  --clr-red: #2e51a2;
 }
 
 .item-container .red-item::after {
@@ -373,7 +403,44 @@ main {
   top: -12.5%;
 }
 
-.item-container .red-item .red-img {
+.item-container-more .red-item::after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  /* height: 10%; */
+  aspect-ratio: 1/1;
+  right: 0.5rem;
+  top: 0.5rem;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 0rem;
+  border-top-width: 0.2rem;
+  border-right-width: 0.2rem;
+  z-index: 300;
+}
+.item-container-more .red-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -0%;
+  top: -0%;
+  /* background-color: red; */
+  border: 0.2rem solid var(--clr-red);
+  transition: 0.2s ease;
+  z-index: 100;
+}
+.item-container-more .red-item:focus::before,
+.item-container-more .red-item:hover::before {
+  width: 125%;
+  height: 125%;
+  left: -12.5%;
+  top: -12.5%;
+}
+
+
+.item-container .red-item .red-img,
+.item-container-more .red-item .red-img {
   width: 50%;
   aspect-ratio: 1/1;
   object-fit: contain;
@@ -445,6 +512,17 @@ main {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 3200px) {
+  html {
+    font-size: 32px;
+  }
+}
 
 
 body.dark {
