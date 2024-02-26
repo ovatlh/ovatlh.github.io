@@ -617,6 +617,10 @@ main {
   border-radius: 0.2rem;
 }
 
+.main-recursos .t-table .td-expanded {
+  word-break: normal;
+}
+
 .main-recursos .web-data {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -737,7 +741,9 @@ body.dark .item.volver {
 }
 
 body.dark .web-data,
-body.dark .main-recursos .tags p {
+body.dark .main-recursos .tags p,
+body.dark .main-recursos .t-table .btn-col-expander,
+body.dark .main-recursos .t-table .btn-row-expander {
   background-color: #2B3137;
   color: white;
 }
