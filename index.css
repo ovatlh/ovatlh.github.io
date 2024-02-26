@@ -5,8 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1;
-
-  /* outline: 1px solid red; */
 }
 
 :root {
@@ -16,6 +14,7 @@
 html {
   font-family: Poppins;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 body {
@@ -578,16 +577,41 @@ main {
 }
 
 .main-recursos {
-  grid-template-areas: "volver none" "recursos recursos";
+  grid-template-areas: 
+    "volver none" 
+    "filtros filtros"
+    "recursos recursos";
+  min-height: 100vh;
 }
 
 .main-recursos .recursos-container {
   grid-area: recursos;
 }
 
+.main-recursos .recursos-filtros {
+  grid-area: filtros;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--global-gap);
+  align-items: center;
+}
+
 .main-recursos .t-table th,
 .main-recursos .t-table td {
   padding: 1rem;
+}
+
+.main-recursos .t-table .tr-status-content {
+  font-size: 2rem;
+  color: #1e1e1e;
+}
+
+.main-recursos .t-table .tr-status-rowsinbody {
+  opacity: 0;
+  border: none;
+}
+.main-recursos .t-table .tr-status-content:hover {
+  background-color: transparent;
 }
 
 .main-recursos tbody tr {
@@ -658,6 +682,68 @@ main {
   line-height: 1.5;
 }
 
+.recursos-buscar {
+  font-size: 1rem;
+  padding: 0rem 0.5rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.5rem;
+}
+
+.recursos-tags {
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.5rem;
+}
+
+.t-select-container .t-select-option-list {
+  max-height: 20rem;
+  color: #1e1e1e;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #e1e1e1;
+}
+
+.t-select-container .action-list input[type="search"] {
+  border: none;
+  background-color: hsl(0, 0%, 98%);
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+.t-select-container .action-list .btn-t-select-toggle-all {
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  margin-bottom: 2px;
+  padding: 0.6rem;
+}
+
+.t-select-container .option-list {
+  min-height: 1rem;
+}
+
+.t-select-container .option-list label {
+  position: relative;
+  padding: 0.8rem;
+  margin: 0.5rem 0rem;
+}
+.t-select-container .option-list label::before {
+  position: absolute;
+  top: -0.25rem;
+  left: 12.5%;
+  content: "";
+  width: 75%;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+.t-select-container .option-list label:first-of-type::before {
+  background-color: transparent;
+}
+
 @media screen and (max-width: 768px) {
   :root {
     --global-gap: 2rem;
@@ -683,6 +769,10 @@ main {
   .item.volver {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+
+  .main-recursos .recursos-filtros {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -745,5 +835,33 @@ body.dark .main-recursos .tags p,
 body.dark .main-recursos .t-table .btn-col-expander,
 body.dark .main-recursos .t-table .btn-row-expander {
   background-color: #2B3137;
+  color: white;
+}
+
+body.dark .recursos-buscar {
+  background-color: #2B3137;
+  color: white;
+  border-color: #1e1e1e;
+}
+body.dark .main-recursos .t-table .tr-status-content {
+  color: white;
+}
+
+body.dark .recursos-tags {
+  background-color: #2B3137;
+  color: white;
+  border-color: #1e1e1e;
+}
+body.dark .t-select-container .t-select-option-list{
+  background-color: #2B3137;
+  color: white;
+  border-color: #1e1e1e;
+}
+body.dark .t-select-container .action-list input[type="search"] {
+  background-color: #2B3137;
+  color: white;
+}
+body.dark .t-select-container .action-list .btn-t-select-toggle-all {
+  background-color: hsl(210, 12%, 25%);
   color: white;
 }

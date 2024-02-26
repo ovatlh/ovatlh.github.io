@@ -1,3 +1,8 @@
+let web_list = [];
+let web_list_filter = [];
+
+const recursos_buscar_DOM = document.getElementById("recursos-buscar");
+
 function fn_theme_light() {
   document.body.classList.remove("dark");
 
@@ -82,12 +87,66 @@ const table_def_columns = [
   },
 ];
 
+function fn_refresh_table(id, value) {
+  const buscar_value = recursos_buscar_DOM.value;
+  let temp_web_list = web_list;
+  if(buscar_value.length > 0) {
+    temp_web_list = temp_web_list.filter((item => item.name.toLowerCase().includes(buscar_value)));
+  }
+
+  const res_web_list_filtered = temp_web_list.filter((item) => {
+    if(value.length > 0) {
+      if(value.some(v => item.tags.includes(v))) {
+        return item;
+      }
+    } else {
+      return item;
+    }
+  });
+
+  ttable.fnRefreshDataList({
+    dataList: res_web_list_filtered,
+    id: "webs-table",
+  });
+}
+
+function fn_refresh_table_buscar() {
+  fn_refresh_table("", []);
+}
+
+function fn_tselect_init(optionList = []) {
+  tselect.fnInit({
+    id: "recursos-tags",
+    btnPlaceHolder: "tags",
+    selectAllPlaceHolder: "Todos",
+    deselectAllPlaceHolder: "Nada",
+    isSearchEnable: true,
+    isToggleAllEnable: true,
+    optionList: optionList,
+    searchPlaceHolder: "Buscar tags",
+    btnSelectPlaceHolder: "tags",
+    fnOnValueChange: fn_refresh_table,
+  });
+}
+
 async function fn_init() {
-  const web_list = await fn_load_webs_json();
+  web_list = await fn_load_webs_json();
+
+  const pre_tags_list = web_list.map((item) => item.tags);
+  const tags_list = pre_tags_list.flat(Infinity);
+  const tags_unique_list = Array.from(new Set(tags_list));
+  const tags_option_list = tags_unique_list.map((item) => {
+    const temp_obj = {
+      text: item,
+      value: item,
+    };
+
+    return temp_obj;
+  });
 
   ttable.fnInit({
     id: "webs-table",
-    dataList: web_list,
+    dataList: web_list_filter,
     textNoData: "Sin información",
     statusRowsInBody: 10,
     columnDefList: table_def_columns,
@@ -98,6 +157,10 @@ async function fn_init() {
       closeRow: "x",
     }
   });
+
+  fn_refresh_table("", []);
+
+  fn_tselect_init(tags_option_list);
 }
 
 fn_init();

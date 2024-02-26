@@ -7,9 +7,11 @@
   <title>ovatlh | recursos</title>
 
   <link rel="stylesheet" href="libs/ttable-v0.1.0/ttable.css">
+  <link rel="stylesheet" href="libs/tselect-v0.1.0/tselect.css">
   <link rel="stylesheet" href="index.css">
 
   <script src="libs/ttable-v0.1.0/ttable.js"></script>
+  <script src="libs/tselect-v0.1.0/tselect.js"></script>
   <script src="recursos.js" defer></script>
 </head>
 <body>
@@ -19,6 +21,12 @@
     <a href="/" class="item volver">
       <p class="text">volver</p>
     </a>
+
+    <div class="recursos-filtros">
+      <input class="recursos-buscar" type="search" name="recursos-buscar" id="recursos-buscar" placeholder="Buscar" oninput="fn_refresh_table_buscar();">
+
+      <select class="recursos-tags" id="recursos-tags" name="recursos-tags" multiple></select>
+    </div>
 
     <div class="recursos-container">
       <table class="" id="webs-table"></table>

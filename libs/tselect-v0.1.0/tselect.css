@@ -1,0 +1,86 @@
+.t-select-container,
+.t-select-container .btn-t-select, 
+.t-select-container .original-select,
+.t-select-container .t-select-option-list, 
+.t-select-container .t-select-option-list .action-list,
+.t-select-container .t-select-option-list input[type="search"],
+.t-select-container .t-select-option-list label,
+.t-select-container .t-select-option-list label input[type="radio"],
+.t-select-container .t-select-option-list label input[type="checkbox"],
+.t-select-container .t-select-option-list label .t-select-option-content {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.t-select-container .btn-t-select,
+.t-select-container .t-select-option-list label {
+  cursor: pointer;
+}
+
+.t-select-container {
+  position: relative;
+  display: grid;
+  grid-template-areas: "TSELECT";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.t-select-container .original-select {
+  grid-area: TSELECT;
+  opacity: 0;
+  z-index: 1;
+}
+
+.t-select-container .btn-t-select {
+  display: grid;
+  padding: 0.5em;
+  width: 100%;
+  grid-area: TSELECT;
+  z-index: 2;
+}
+
+.t-select-container .t-select-option-list {
+  position: absolute;
+  display: none;
+  grid-template-columns: 1fr;
+  top: 100%;
+  max-width: 100%;
+  z-index: 20;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.t-select-container.open .t-select-option-list {
+  display: grid;
+}
+
+.t-select-container .t-select-option-list .action-list {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.t-select-container .t-select-option-list input[type="search"] {
+  padding: 0.5em;
+}
+.t-select-container .t-select-option-list .btn-t-select-toggle-all {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.t-select-container .t-select-option-list label {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: auto 1fr;
+  padding: 0.5em;
+  align-items: center;
+}
+.t-select-container .t-select-option-list label:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.t-select-container .t-select-option-list * {
+  width: 100%;
+}
