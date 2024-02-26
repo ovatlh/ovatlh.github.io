@@ -50,7 +50,7 @@
   {
     "url": "https://placekitten.com/",
     "name": "{placekitten}",
-    "tags": ["imagenes", "relleno", "gatitos"],
+    "tags": ["imágenes", "relleno", "gatitos"],
     "desc": "Imágenes de gatitos para desarrolladores."
   },
   {
@@ -146,7 +146,7 @@
   {
     "url": "https://meshgradient.com",
     "name": "Mesh",
-    "tags": ["imagenes", "degradado"],
+    "tags": ["imágenes", "degradado"],
     "desc": "Cree bonitos degradados de malla."
   },
   {
@@ -158,7 +158,7 @@
   {
     "url": "https://app.haikei.app",
     "name": "Haikei",
-    "tags": ["svg", "imagenes", "fondos"],
+    "tags": ["svg", "imágenes", "fondos"],
     "desc": "Generador de fondos/imágenes svg."
   },
   {
@@ -200,7 +200,7 @@
   {
     "url": "https://squoosh.app/",
     "name": "Squoosh",
-    "tags": ["imagenes"],
+    "tags": ["imágenes"],
     "desc": "Imágenes más pequeñas significan tiempos de carga más rápidos. Squoosh puede reducir el tamaño de los archivos y mantener una alta calidad."
   },
   {
@@ -212,7 +212,7 @@
   {
     "url": "https://www.photopea.com/",
     "name": "Photopea",
-    "tags": ["imagenes", "editor"],
+    "tags": ["imágenes", "editor"],
     "desc": "Editor de imágenes avanzado en el navegador"
   },
   {
@@ -224,7 +224,7 @@
   {
     "url": "https://patternico.com",
     "name": "Seamless Pattern Maker",
-    "tags": ["imagenes", "patrones"],
+    "tags": ["imágenes", "patrones"],
     "desc": "Crea fondos únicos gratis"
   },
   {
