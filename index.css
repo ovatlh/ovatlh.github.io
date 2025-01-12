@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-white: #0d0d0d;
+  --clr-black: #e1e1e1;
+  --clr-hover: rgba(0, 0, 0, 0.1);
+  --brd-width: 2px;
+}
+
+[data-theme="light"] {
+  --clr-white: #0d0d0d;
+  --clr-black: #e1e1e1;
+  --clr-hover: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --clr-white: #e1e1e1;
+  --clr-black: #0d0d0d;
+  --clr-hover: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  font-family: IBM Plex Mono;
+  color: var(--clr-white);
+}
+.bg {
+  background: url("https://i.ibb.co/FgcVfGG/bg-noise-1.png"), var(--clr-black);
+  background-size: 300px 300px;
+  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@-webkit-keyframes noise-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: -5% -5%;
+  }
+  20% {
+    background-position: -10% 5%;
+  }
+  30% {
+    background-position: 5% -10%;
+  }
+  40% {
+    background-position: -5% 15%;
+  }
+  50% {
+    background-position: -10% 5%;
+  }
+  60% {
+    background-position: 5% 5%;
+  }
+  70% {
+    background-position: 0% 10%;
+  }
+  80% {
+    background-position: -5% -5%;
+  }
+  90% {
+    background-position: 10% 5%;
+  }
+}
+@keyframes noise-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: -5% -5%;
+  }
+  20% {
+    background-position: -10% 5%;
+  }
+  30% {
+    background-position: 5% -10%;
+  }
+  40% {
+    background-position: -5% 15%;
+  }
+  50% {
+    background-position: -10% 5%;
+  }
+  60% {
+    background-position: 5% 5%;
+  }
+  70% {
+    background-position: 0% 10%;
+  }
+  80% {
+    background-position: -5% -5%;
+  }
+  90% {
+    background-position: 10% 5%;
+  }
+}
+
+p {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+a {
+  color: var(--clr-white);
+  text-decoration: underline;
+  display: block;
+  padding: 0.5em;
+}
+a:hover {
+  background-color: var(--clr-hover);
+}
+
+.t-favicon {
+  width: 4em;
+}
+
+body {
+  display: grid;
+  padding: 1em;
+}
+
+main {
+  position: relative;
+  justify-self: center;
+  width: 100%;
+  max-width: 24em;
+  border: var(--brd-width) solid var(--clr-white);
+  background-color: var(--clr-black);
+}
+
+button {
+  position: absolute;
+  right: 0%;
+  font-size: 1em;
+  padding: 0.5em;
+  border: var(--brd-width) solid var(--clr-white);
+  border-right: 0px;
+  border-top: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--clr-hover);
+}
+
+.top {
+  display: grid;
+  grid-auto-flow: row;
+  border-bottom: var(--brd-width) solid var(--clr-white);
+}
+
+.top .icon {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  justify-self: center;
+  gap: 1em;
+  padding-top: 1em;
+}
+
+.top .at {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.top .job {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.top .info {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: var(--brd-width) solid var(--clr-white);
+}
+
+.top .info a:is(:not(:first-of-type, :last-of-type)) {
+  border: var(--brd-width) solid var(--clr-white);
+  border-width: 0px var(--brd-width);
+}
+
+.content {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.content .item {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1em;
+}
+
+.content .skills,
+.content .languages,
+.content .projects {
+  padding: 1em;
+}
+
+.content .languages {
+  border: var(--brd-width) solid var(--clr-white);
+  border-width: var(--brd-width) 0px;
+}
+
+.item p {
+  font-weight: bold;
+}
+
+.item ul {
+  display: grid;
+  gap: 0.25em;
+  padding-left: 1em;
+}
