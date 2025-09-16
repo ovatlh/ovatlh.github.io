@@ -29,7 +29,7 @@ html {
   color: var(--clr-white);
 }
 .bg {
-  background: url("https://i.ibb.co/FgcVfGG/bg-noise-1.png"), var(--clr-black);
+  background: url("files/bg-noise-1.png"), var(--clr-black);
   background-size: 300px 300px;
   animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
   min-height: 100vh;
