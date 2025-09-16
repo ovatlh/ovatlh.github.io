@@ -34,9 +34,8 @@ html {
   animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
   min-height: 100vh;
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: fixed;
+  inset: 0;
 }
 @-webkit-keyframes noise-animation {
   0% {
